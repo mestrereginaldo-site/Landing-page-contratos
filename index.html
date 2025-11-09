@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contratos Expresso - Contratos Profissionais por Apenas R$ 97</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
     <style>
         * {
             margin: 0;
@@ -24,7 +25,6 @@
             padding: 0 20px;
         }
         
-        /* Header */
         header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
@@ -47,57 +47,61 @@
             color: #4CAF50;
         }
         
-        .contact {
-            font-size: 16px;
-        }
-        
-        /* Hero Section */
         .hero {
-            padding: 80px 0;
-            background: linear-gradient(rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+            padding: 100px 0;
+            background: 
+                linear-gradient(rgba(30, 60, 114, 0.85), rgba(42, 82, 152, 0.85)),
+                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
             text-align: center;
         }
         
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 3rem;
             margin-bottom: 20px;
             line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 30px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         
         .price {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: bold;
             color: #4CAF50;
             margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .cta-button {
             display: inline-block;
             background: #4CAF50;
             color: white;
-            padding: 18px 40px;
-            font-size: 1.3rem;
+            padding: 20px 50px;
+            font-size: 1.4rem;
             font-weight: bold;
             border-radius: 50px;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
             margin: 20px 0;
+            border: 2px solid white;
         }
         
         .cta-button:hover {
             background: #45a049;
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
         
         .guarantee {
@@ -105,15 +109,13 @@
             align-items: center;
             justify-content: center;
             margin-top: 20px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
         }
         
-        .guarantee i {
-            margin-right: 10px;
-            color: #4CAF50;
-        }
-        
-        /* Benefits Section */
         .benefits {
             padding: 80px 0;
             background: white;
@@ -122,7 +124,7 @@
         .section-title {
             text-align: center;
             margin-bottom: 50px;
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             color: #1e3c72;
         }
         
@@ -134,32 +136,39 @@
         
         .benefit-card {
             background: #f8f9fa;
-            border-radius: 10px;
-            padding: 30px;
+            border-radius: 15px;
+            padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
         }
         
         .benefit-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
         
         .benefit-icon {
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: #2a5298;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
         .benefit-card h3 {
             margin-bottom: 15px;
             color: #1e3c72;
+            font-size: 1.4rem;
         }
         
-        /* How It Works */
+        .benefit-card p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
         .how-it-works {
             padding: 80px 0;
-            background: #f1f5f9;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e9ecef 100%);
         }
         
         .steps {
@@ -181,17 +190,23 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 60px;
-            height: 60px;
-            background: #2a5298;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
             color: white;
             border-radius: 50%;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
-        /* Testimonials */
+        .step h3 {
+            font-size: 1.3rem;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        
         .testimonials {
             padding: 80px 0;
             background: white;
@@ -205,58 +220,25 @@
         
         .testimonial-card {
             background: #f8f9fa;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #2a5298;
         }
         
         .testimonial-text {
             font-style: italic;
             margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
         
         .testimonial-author {
             font-weight: bold;
             color: #1e3c72;
+            font-size: 1.1rem;
         }
         
-        /* FAQ */
-        .faq {
-            padding: 80px 0;
-            background: #f1f5f9;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        }
-        
-        .faq-question {
-            background: white;
-            padding: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-answer {
-            background: #f8f9fa;
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        /* Final CTA */
         .final-cta {
             padding: 100px 0;
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
@@ -265,23 +247,22 @@
         }
         
         .final-cta h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 20px;
         }
         
         .final-cta p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 30px;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
         
-        /* Footer */
         footer {
             background: #1a1a1a;
             color: white;
-            padding: 50px 0 20px;
+            padding: 60px 0 20px;
         }
         
         .footer-content {
@@ -294,15 +275,31 @@
         .footer-section h3 {
             margin-bottom: 20px;
             color: #4CAF50;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p, .footer-section li {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li:before {
+            content: "✓ ";
+            color: #4CAF50;
+            margin-right: 8px;
         }
         
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid #333;
+            color: #999;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.2rem;
@@ -313,44 +310,45 @@
             }
             
             .price {
-                font-size: 2.8rem;
+                font-size: 3rem;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.2rem;
             }
             
             .steps {
                 flex-direction: column;
             }
-
-            .header-content {
-                flex-direction: column;
-                gap: 10px;
+            
+            .section-title {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">Contratos<span>Expresso</span></div>
-                <div class="contact">Fale Conosco: (11) 99999-9999</div>
+                <div class="contact">Fale Conosco: [SEU-NÚMERO]</div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>Contratos Profissionais por Apenas <span class="price">R$ 97</span></h1>
             <p>Proteja seu negócio com contratos jurídicos elaborados por especialistas. Prontos em até 24 horas!</p>
-            <a href="https://wa.me/5511999999999?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">QUERO MEU CONTRATO AGORA</a>
+            <a href="https://wa.me/[SEU-NÚMERO-COMPLETO]?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">QUERO MEU CONTRATO AGORA</a>
             <div class="guarantee">
-                <i>✓</i> <span>Garantia de satisfação ou seu dinheiro de volta</span>
+                <span>✓ Garantia de satisfação ou seu dinheiro de volta</span>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
     <section class="benefits">
         <div class="container">
             <h2 class="section-title">Por que escolher o Contratos Expresso?</h2>
@@ -389,7 +387,6 @@
         </div>
     </section>
 
-    <!-- How It Works -->
     <section class="how-it-works">
         <div class="container">
             <h2 class="section-title">Como funciona em 3 passos simples</h2>
@@ -413,7 +410,6 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">O que nossos clientes dizem</h2>
@@ -434,72 +430,16 @@
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Perguntas Frequentes</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Quais tipos de contrato vocês oferecem?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Oferecemos diversos tipos de contratos: prestação de serviços, confidencialidade (NDA), parceria comercial, trabalho remoto, franquia simplificada, comodato, entre outros. Se você não encontrar o que precisa, entre em contato!
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Quanto tempo leva para o contrato ficar pronto?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Nosso prazo padrão é de até 24 horas úteis. Para urgências, oferecemos serviço expresso com prazo reduzido (consulte valores).
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        O contrato é personalizado para meu negócio?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Sim! Todos os contratos são personalizados de acordo com as informações que você nos fornecer. Não usamos modelos genéricos - cada contrato é adaptado à sua realidade.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        E se eu não ficar satisfeito com o contrato?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Oferecemos garantia de satisfação. Se não gostar do resultado, devolvemos 100% do seu dinheiro. Sua satisfação é nossa prioridade.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Posso fazer alterações depois de receber o contrato?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Claro! Incluímos 2 rodadas de ajustes gratuitas para garantir que o contrato atenda perfeitamente às suas necessidades.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
             <h2>Proteja seu negócio hoje mesmo!</h2>
             <p>Não arrisque sua empresa com contratos improvisados. Invista em segurança jurídica por um preço acessível.</p>
             <div class="price">R$ 97</div>
-            <a href="https://wa.me/5511999999999?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">FALAR COM ESPECIALISTA AGORA</a>
-            <p style="margin-top: 20px; font-size: 1rem;">Atendimento via WhatsApp - Rápido e Prático</p>
+            <a href="https://wa.me/[SEU-NÚMERO-COMPLETO]?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">FALAR COM ESPECIALISTA AGORA</a>
+            <p style="margin-top: 20px; font-size: 1rem; opacity: 0.9;">Atendimento via WhatsApp - Rápido e Prático</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -509,7 +449,7 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contato</h3>
-                    <p>WhatsApp: (11) 99999-9999</p>
+                    <p>WhatsApp: [SEU-NÚMERO]</p>
                     <p>Email: contato@contratosexpresso.com.br</p>
                     <p>Horário: Seg a Sex, 9h às 18h</p>
                 </div>
@@ -525,29 +465,34 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Contratos Expresso. Todos os direitos reservados.</p>
+                <p>&copy; 2024 Contratos Expresso. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                answer.classList.toggle('active');
-                
-                // Change the icon
-                const icon = question.querySelector('span');
-                icon.textContent = answer.classList.contains('active') ? '-' : '+';
-            });
-        });
-        
-        // WhatsApp click tracking (simplified)
-        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-            link.addEventListener('click', () => {
-                // Here you would typically send data to Google Analytics
-                console.log('WhatsApp link clicked');
+        // Animação suave para os elementos
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observar elementos para animação
+            document.querySelectorAll('.benefit-card, .step, .testimonial-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
             });
         });
     </script>
