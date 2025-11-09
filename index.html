@@ -24,7 +24,6 @@
             padding: 0 20px;
         }
         
-        /* Header */
         header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
@@ -47,14 +46,11 @@
             color: #4CAF50;
         }
         
-        .contact {
-            font-size: 16px;
-        }
-        
-        /* Hero Section */
         .hero {
             padding: 80px 0;
             background: linear-gradient(rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+            background-size: cover;
+            background-position: center;
             color: white;
             text-align: center;
         }
@@ -108,12 +104,6 @@
             font-size: 1.1rem;
         }
         
-        .guarantee i {
-            margin-right: 10px;
-            color: #4CAF50;
-        }
-        
-        /* Benefits Section */
         .benefits {
             padding: 80px 0;
             background: white;
@@ -151,12 +141,6 @@
             margin-bottom: 20px;
         }
         
-        .benefit-card h3 {
-            margin-bottom: 15px;
-            color: #1e3c72;
-        }
-        
-        /* How It Works */
         .how-it-works {
             padding: 80px 0;
             background: #f1f5f9;
@@ -191,7 +175,6 @@
             margin-bottom: 20px;
         }
         
-        /* Testimonials */
         .testimonials {
             padding: 80px 0;
             background: white;
@@ -220,7 +203,6 @@
             color: #1e3c72;
         }
         
-        /* FAQ */
         .faq {
             padding: 80px 0;
             background: #f1f5f9;
@@ -256,7 +238,6 @@
             max-height: 500px;
         }
         
-        /* Final CTA */
         .final-cta {
             padding: 100px 0;
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
@@ -264,20 +245,6 @@
             text-align: center;
         }
         
-        .final-cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .final-cta p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        /* Footer */
         footer {
             background: #1a1a1a;
             color: white;
@@ -302,7 +269,6 @@
             border-top: 1px solid #333;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.2rem;
@@ -319,38 +285,30 @@
             .steps {
                 flex-direction: column;
             }
-
-            .header-content {
-                flex-direction: column;
-                gap: 10px;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">Contratos<span>Expresso</span></div>
-                <div class="contact">Fale Conosco: (11) 99999-9999</div>
+                <div class="contact">Fale Conosco: [SEU-NÚMERO-AQUI]</div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>Contratos Profissionais por Apenas <span class="price">R$ 97</span></h1>
             <p>Proteja seu negócio com contratos jurídicos elaborados por especialistas. Prontos em até 24 horas!</p>
-            <a href="https://wa.me/5511999999999?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">QUERO MEU CONTRATO AGORA</a>
+            <a href="https://wa.me/[SEU-NÚMERO-COMPLETO]?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">QUERO MEU CONTRATO AGORA</a>
             <div class="guarantee">
-                <i>✓</i> <span>Garantia de satisfação ou seu dinheiro de volta</span>
+                <span>✓ Garantia de satisfação ou seu dinheiro de volta</span>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
     <section class="benefits">
         <div class="container">
             <h2 class="section-title">Por que escolher o Contratos Expresso?</h2>
@@ -375,21 +333,10 @@
                     <h3>Segurança Jurídica</h3>
                     <p>Proteja seu negócio de problemas futuros.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📝</div>
-                    <h3>Personalização</h3>
-                    <p>Contratos adaptados à sua realidade específica.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📞</div>
-                    <h3>Suporte Direto</h3>
-                    <p>Tire suas dúvidas diretamente com nosso time.</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
     <section class="how-it-works">
         <div class="container">
             <h2 class="section-title">Como funciona em 3 passos simples</h2>
@@ -413,7 +360,6 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">O que nossos clientes dizem</h2>
@@ -426,80 +372,19 @@
                     <p class="testimonial-text">"Já usei várias vezes. Sempre muito satisfeita com a qualidade e agilidade. Recomendo para todos os meus colegas empreendedores."</p>
                     <p class="testimonial-author">- Mariana Oliveira, Consultora</p>
                 </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Finalmente encontrei um serviço jurídico acessível para minha pequena empresa. O contrato foi perfeito para minha necessidade."</p>
-                    <p class="testimonial-author">- Roberto Almeida, Loja Virtual</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Perguntas Frequentes</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Quais tipos de contrato vocês oferecem?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Oferecemos diversos tipos de contratos: prestação de serviços, confidencialidade (NDA), parceria comercial, trabalho remoto, franquia simplificada, comodato, entre outros. Se você não encontrar o que precisa, entre em contato!
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Quanto tempo leva para o contrato ficar pronto?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Nosso prazo padrão é de até 24 horas úteis. Para urgências, oferecemos serviço expresso com prazo reduzido (consulte valores).
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        O contrato é personalizado para meu negócio?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Sim! Todos os contratos são personalizados de acordo com as informações que você nos fornecer. Não usamos modelos genéricos - cada contrato é adaptado à sua realidade.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        E se eu não ficar satisfeito com o contrato?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Oferecemos garantia de satisfação. Se não gostar do resultado, devolvemos 100% do seu dinheiro. Sua satisfação é nossa prioridade.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Posso fazer alterações depois de receber o contrato?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        Claro! Incluímos 2 rodadas de ajustes gratuitas para garantir que o contrato atenda perfeitamente às suas necessidades.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
             <h2>Proteja seu negócio hoje mesmo!</h2>
             <p>Não arrisque sua empresa com contratos improvisados. Invista em segurança jurídica por um preço acessível.</p>
             <div class="price">R$ 97</div>
-            <a href="https://wa.me/5511999999999?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">FALAR COM ESPECIALISTA AGORA</a>
-            <p style="margin-top: 20px; font-size: 1rem;">Atendimento via WhatsApp - Rápido e Prático</p>
+            <a href="https://wa.me/[SEU-NÚMERO-COMPLETO]?text=Quero%20contratar%20um%20contrato%20por%20R%24%2097" class="cta-button">FALAR COM ESPECIALISTA AGORA</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -509,45 +394,21 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contato</h3>
-                    <p>WhatsApp: (11) 99999-9999</p>
+                    <p>WhatsApp: [SEU-NÚMERO-AQUI]</p>
                     <p>Email: contato@contratosexpresso.com.br</p>
-                    <p>Horário: Seg a Sex, 9h às 18h</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Tipos de Contrato</h3>
-                    <ul>
-                        <li>Prestação de Serviços</li>
-                        <li>Confidencialidade (NDA)</li>
-                        <li>Parceria Comercial</li>
-                        <li>Trabalho Remoto</li>
-                        <li>Franquia Simplificada</li>
-                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Contratos Expresso. Todos os direitos reservados.</p>
+                <p>&copy; 2024 Contratos Expresso. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const answer = question.nextElementSibling;
                 answer.classList.toggle('active');
-                
-                // Change the icon
-                const icon = question.querySelector('span');
-                icon.textContent = answer.classList.contains('active') ? '-' : '+';
-            });
-        });
-        
-        // WhatsApp click tracking (simplified)
-        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-            link.addEventListener('click', () => {
-                // Here you would typically send data to Google Analytics
-                console.log('WhatsApp link clicked');
             });
         });
     </script>
