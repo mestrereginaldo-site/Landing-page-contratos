@@ -238,6 +238,53 @@
             color: #1e3c72;
             font-size: 1.1rem;
         }
+
+        /* FAQ SECTION - AGORA COMPLETA */
+        .faq {
+            padding: 80px 0;
+            background: #f1f5f9;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            background: white;
+        }
+        
+        .faq-question {
+            background: white;
+            padding: 25px 30px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #1e3c72;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+        
+        .faq-answer {
+            background: #f8f9fa;
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .faq-answer.active {
+            padding: 25px 30px;
+            max-height: 500px;
+        }
         
         .final-cta {
             padding: 100px 0;
@@ -324,6 +371,11 @@
             
             .section-title {
                 font-size: 2rem;
+            }
+            
+            .faq-question {
+                padding: 20px;
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -430,6 +482,60 @@
         </div>
     </section>
 
+    <!-- SEÇÃO FAQ - AGORA DE VOLTA E COMPLETA -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quais tipos de contrato vocês oferecem?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Oferecemos diversos tipos de contratos: prestação de serviços, confidencialidade (NDA), parceria comercial, trabalho remoto, franquia simplificada, comodato, entre outros. Se você não encontrar o que precisa, entre em contato!
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quanto tempo leva para o contrato ficar pronto?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Nosso prazo padrão é de até 24 horas úteis. Para urgências, oferecemos serviço expresso com prazo reduzido (consulte valores).
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        O contrato é personalizado para meu negócio?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Todos os contratos são personalizados de acordo com as informações que você nos fornecer. Não usamos modelos genéricos - cada contrato é adaptado à sua realidade.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        E se eu não ficar satisfeito com o contrato?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Oferecemos garantia de satisfação. Se não gostar do resultado, devolvemos 100% do seu dinheiro. Sua satisfação é nossa prioridade.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Posso fazer alterações depois de receber o contrato?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Claro! Incluímos 2 rodadas de ajustes gratuitas para garantir que o contrato atenda perfeitamente às suas necessidades.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="final-cta">
         <div class="container">
             <h2>Proteja seu negócio hoje mesmo!</h2>
@@ -471,6 +577,17 @@
     </footer>
 
     <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+                
+                const icon = question.querySelector('span');
+                icon.textContent = answer.classList.contains('active') ? '-' : '+';
+            });
+        });
+
         // Animação suave para os elementos
         document.addEventListener('DOMContentLoaded', function() {
             const observerOptions = {
@@ -488,7 +605,7 @@
             }, observerOptions);
 
             // Observar elementos para animação
-            document.querySelectorAll('.benefit-card, .step, .testimonial-card').forEach(el => {
+            document.querySelectorAll('.benefit-card, .step, .testimonial-card, .faq-item').forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(20px)';
                 el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
